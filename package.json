@@ -1,0 +1,13 @@
+{
+  "name": "tipper",
+  "version": "0.0.1",
+  "description": "A simple CLI designed to help you calculate how to tip someone.",
+  "main": "index.js",
+  "repository": "https://github.com/jsmiith/tipper",
+  "author": "Jacob Smith",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0"
+  }
+}
