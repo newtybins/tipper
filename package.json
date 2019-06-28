@@ -1,6 +1,6 @@
 {
   "name": "tipper",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple CLI designed to help you calculate how to tip someone.",
   "main": "index.js",
   "repository": "https://github.com/jsmiith/tipper",
