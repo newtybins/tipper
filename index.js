@@ -7,12 +7,12 @@ const pkg = require('./package.json');
 
 program
     .version(pkg.version)
-    .option('-a, --amount <cost>', 'The total cost of your bill.', parseFloat)
-    .option('-q, --quality <1-5>', 'Allows you to set a quality of the service you recieved.', parseInt)
+    .option('-b, --bill <cost>', 'The total cost of your bill.', parseFloat)
+    .option('-q, --quality [1-5]', 'Allows you to set a quality of the service you recieved.', parseInt)
     .parse(process.argv);
 
 // checks
-if (program.amount === undefined) return console.log(chalk.red.bold('You didn\'t specify the total of your bill!'));
+if (program.bill === undefined) return console.log(chalk.red.bold('You didn\'t specify the total of your bill!'));
 if (isNaN(program.amount)) return console.log(chalk.red.bold('The bill amount is not a number.'));
 if (isNaN(program.quality) && program.quality !== undefined) return console.log(chalk.red.bold('The quality of service is not a number.'));
 
@@ -26,7 +26,7 @@ if (program.quality === 4) quality = 10;
 if (program.quality === 5) quality = 5;
 
 // calculate the tip
-const tip = (program.amount + (program.amount / 100) * quality).toFixed(2);
+const tip = (program.bill + (program.bill / 100) * quality).toFixed(2);
 if (isNaN(tip)) return console.log(chalk.red.bold('The tip calculated is not a number.'))
 
 // display the tip
