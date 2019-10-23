@@ -1,6 +1,6 @@
 # tipper
 
-> A simple CLI designed to help you calculate how to tip someone.
+> A simple CLI designed to help you calculate how much to tip someone.
 
 ## Usage
 
