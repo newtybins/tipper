@@ -7,7 +7,7 @@
   "author": "newt",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.1.2",
     "commander": "^2.20.0"
   },
   "bin": {
